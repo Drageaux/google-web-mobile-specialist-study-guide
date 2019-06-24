@@ -1,20 +1,40 @@
 /* main.css */
 
-.container {
+.no-flexbox .container {
   background: #eee;
   overflow: auto;
 }
 
-.container .col {
-    width: 27%;
-    padding: 30px 3.15% 0;
-    float: left;
+.no-flexbox .container .col {
+  width: 27%;
+  padding: 30px 3.15% 0;
+  float: left;
 }
 
-/* TODO 3 - style the page */
+@media screen and (max-width: 48rem) {
+  .no-flexbox .container .col {
+    width: 95%;
+  }
+}
 
-/* TODO 4 - use media query */
+.flexbox .container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background: #eee;
+  overflow: auto;
+}
 
-/* TODO 5.2 - use flexbox */
+.flexbox .container .col {
+  flex: 1;
+  padding: 1rem;
+}
 
-/* TODO 5.4 - use media query with Flexbox*/
+@media screen and (max-width: 48rem) {
+  .flexbox .container {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    flex-flow: column;
+  }
+}
