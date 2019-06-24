@@ -1,0 +1,16 @@
+{
+  "name": "amp-pwa-lab",
+  "version": "1.0.0",
+  "description": "",
+  "main": "js/app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "workbox injectManifest workbox-config.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "express": "^4.16.3",
+    "workbox-cli": "^3.4.1"
+  }
+}

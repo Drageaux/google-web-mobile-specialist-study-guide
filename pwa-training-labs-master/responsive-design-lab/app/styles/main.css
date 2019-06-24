@@ -1,0 +1,20 @@
+/* main.css */
+
+.container {
+  background: #eee;
+  overflow: auto;
+}
+
+.container .col {
+    width: 27%;
+    padding: 30px 3.15% 0;
+    float: left;
+}
+
+/* TODO 3 - style the page */
+
+/* TODO 4 - use media query */
+
+/* TODO 5.2 - use flexbox */
+
+/* TODO 5.4 - use media query with Flexbox*/
