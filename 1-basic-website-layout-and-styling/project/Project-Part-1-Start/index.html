@@ -26,6 +26,10 @@
     <title>My responsive blog: picture story</title>
 
     <link rel="stylesheet" href="css/main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/css-social-buttons/1.3.0/css/zocial.min.css"
+    />
   </head>
 
   <body>
@@ -41,13 +45,12 @@
       <h2>My story</h2>
 
       <p>
-        I love cheese, especially manchego swiss.
-        <img src="images_src/fixed/smiley_face.png" /> Fromage queso jarlsberg
-        cheesy feet emmental cottage cheese camembert de normandie bocconcini.
-        Cottage cheese everyone loves cauliflower cheese rubber cheese squirty
-        cheese halloumi cow fondue. Bocconcini cheese and biscuits everyone
-        loves fondue red leicester st. agur blue cheese rubber cheese ricotta.
-        Cheesy grin mozzarella.
+        I love cheese, especially manchego swiss. &#9786; Fromage queso
+        jarlsberg cheesy feet emmental cottage cheese camembert de normandie
+        bocconcini. Cottage cheese everyone loves cauliflower cheese rubber
+        cheese squirty cheese halloumi cow fondue. Bocconcini cheese and
+        biscuits everyone loves fondue red leicester st. agur blue cheese rubber
+        cheese ricotta. Cheesy grin mozzarella.
       </p>
 
       <div
@@ -167,10 +170,14 @@
       </p>
     </article>
 
-    <img style="max-width: 100%" src="images_src/fixed/flourish.png" />
+    <img style="max-width: 100%" src="images/images_src/fixed/flourish.svg" />
     <!--
   Flourish credit: http://pixabay.com/en/flourish-line-border-decoration-31609/
   -->
+    <a class="zocial twitter">Sign in with Twitter</a>
+    <a class="zocial facebook">Sign in with Facebook</a>
+    <a class="zocial google">Sign in with Google+</a>
+    <a class="zocial digg">Sign in with Digg</a>
 
     <br />
     <a
@@ -181,6 +188,7 @@
     >
 
     <script src="node_modules/imager.js/Imager.js"></script>
+    <script src="https://cdn.rawgit.com/scottjehl/picturefill/3.0.2/dist/picturefill.min.js"></script>
     <script>
       var imager = new Imager({
         availableWidths: [320, 640, 1024, 1600]
