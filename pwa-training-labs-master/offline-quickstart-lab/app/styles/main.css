@@ -14,7 +14,7 @@ See the License for the specific language governing permissions and
 limitations under the License.
 */
 html {
-  background-color: #FF9800;
+  background-color: #ff9800;
 }
 
 body {
@@ -22,17 +22,16 @@ body {
   background-color: white;
   display: flex;
   flex-direction: column;
-  font-family: 'Roboto','Helvetica','Arial',sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   justify-content: space-between;
   margin: 0;
   min-height: 100vh;
 }
 
 header {
-  background-color: #FF9800;
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),
-              0 3px 1px -2px rgba(0,0,0,.2),
-              0 1px 5px 0 rgba(0,0,0,.12);
+  background-color: #ff9800;
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
   box-sizing: border-box;
   display: flex;
   justify-content: center;
@@ -44,10 +43,11 @@ button {
   background-color: #ff9800;
   border: none;
   border-radius: 2px;
-  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2), 0 1px 5px 0 rgba(0, 0, 0, 0.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
   cursor: pointer;
   display: inline-block;
-  font-family: "Roboto", "Helvetica", "Arial", sans-serif;
+  font-family: 'Roboto', 'Helvetica', 'Arial', sans-serif;
   font-size: 14px;
   font-weight: 500;
   height: 36px;
@@ -63,9 +63,8 @@ button {
 }
 
 .card {
-  box-shadow: 0 2px 2px 0 rgba(0,0,0,.14),
-              0 3px 1px -2px rgba(0,0,0,.2),
-              0 1px 5px 0 rgba(0,0,0,.12);
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 3px 1px -2px rgba(0, 0, 0, 0.2),
+    0 1px 5px 0 rgba(0, 0, 0, 0.12);
   margin: 20px;
   max-width: 600px;
   padding: 10px;
@@ -104,12 +103,19 @@ a {
 
 footer {
   align-items: center;
-  background-color: #FF9800;
+  background-color: #ff9800;
   box-sizing: border-box;
   display: flex;
   height: 7vh;
   justify-content: center;
   min-height: 50px;
   padding: 10px;
+  width: 100%;
+}
+
+.banner {
+  align-content: center;
+  display: none;
+  justify-content: center;
   width: 100%;
 }

@@ -17,23 +17,33 @@ limitations under the License.
 <html lang="en">
   <head>
     <!-- Set character encoding -->
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <!-- Set the viewport -->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Set title -->
     <title>Service Worker Example</title>
     <!-- Add stylesheet -->
-    <link href="styles/index.css" rel="stylesheet">
+    <link href="styles/index.css" rel="stylesheet" />
   </head>
   <body>
     <h1>Service Worker Example</h1>
     <a href="other.html">Other page</a>
-    <br><br>
+    <br /><br />
     <a href="below/another.html">Another page</a>
     <script>
-
-    // Script to register the service worker goes here
-
+      // Script to register the service worker goes here
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', function() {
+          navigator.serviceWorker
+            .register('service-worker.js')
+            .then(reg => {
+              console.log('Service worker registered! 😎', reg);
+            })
+            .catch(err => {
+              console.log('😥 Service worker registration failed: ', err);
+            });
+        });
+      }
     </script>
   </body>
 </html>
